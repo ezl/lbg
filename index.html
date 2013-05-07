@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--[if IE 8]>                  <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Foundation 4</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+<style>
+@font-face{
+    font-family:"lb";
+    src:url("gothic.woff") format("woff");
+}
+.script {
+    font-family: 'Alex Brush', cursive;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, span { color: #666; }
+xbody { background-color:#512323;}
+body { background-image: url(img/metal/etal2.jpg); }
+
+a { display: inline-block; border-bottom: 1px dotted #aaa;}
+a:hover { color: #F6871F; }
+.bold { font-weight: bold; }
+.shadow { text-shadow: -1px -1px 0 rgba(0,0,0, 0.6);}
+.white { color: white; }
+.orange { color: #F6871F; }
+.logo-orange { color: #FFB300;}
+.growth {
+    color: #888;
+}
+.light-grey { color: #999;}
+
+p { font-size: 150%;}
+.center { text-align: center;}
+
+h1.title {
+    position: absolute;
+    font-family: "lb", "Helvetica Neue", arial, san-serif;
+    color: white;
+    font-size: 9em;
+    font-weight: bold;
+    line-height: 0.8;
+    letter-spacing: 0;
+    margin-top: 75px;
+    width: 100%;
+    text-align: center;
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.3);
+}
+div.background {
+    background-color: #aaa;
+    height:178.9px;
+    width: 100%;
+    position: absolute;
+    background-size: 400px;
+
+    /*background-size: 1550px 1130px;
+    */
+    background: rgba(0,0,0,0.2);
+    background-image: url('img/metal/metal1.jpg');
+    opacity: 0.6;
+}
+
+@media screen and (max-width:480px) {
+    h1.title {
+        font-size: 6em;
+    }
+    div.background {
+        height:144.9px;
+    }
+}
+@media screen and (max-width:320px) {
+    h1.title {
+        font-size: 3em;
+    }
+    div.background {
+        height:110.9px;
+    }
+}
+#spacer { height: 230px; }
+@media screen and (max-width:1000px) {
+    #spacer { height: 350px; }
+}
+@media screen and (max-width:480px) {
+    #spacer { height: 265px; }
+}
+@media screen and (max-width:320px) {
+    #spacer { height: 170px; }
+}
+
+#subtext p, #subtext p > span, #subtext a {
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 0.35em;
+}
+
+a#workwithus-button {
+    font-size: 48px;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 0px solid #F6871F;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+a#workwithus-button:hover {
+    background-color: #F6871F;
+    color:white;
+}
+
+
+div.portrait-container{
+    display: inline-block;
+    margin-top: 50px;
+    border: 5px solid #F6871F;
+    border: 5px solid #ccc;
+    padding: 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+div.portrait-container > img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+div.bio { margin-top: 30px;}
+div.bio > p.title {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+</style>
+<style>
+hr {
+    display: none;
+    background:url('img/bolt1.png') no-repeat top center;
+    height: 60px;
+    border: 0;
+  }
+hr:before {
+    content: url('img/bolt2.png');
+}
+hr:after {
+    content: url('img/bolt3.png');
+}
+div.fakehr {
+    text-align: center;
+}
+div.fakehr > img {
+    margin: 0 40px;
+    height: 30px;
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="background"></div>
+    <h1 class="title"><span class="white">li</span><span class="orange">g</span><span class="white">htbank</span> <span class="growth">growth</span></h1>
+</header>
+
+<div id="spacer" note="i fucking hate this"></div>
+
+<div class="content">
+    <div class="row" id="subtext">
+        <div class="large-8 large-offset-2 columns">
+            <p class="script light-grey">we grow <span class="bold">amazing</span> companies</p>
+            <p><span class="orange">repeatable, methodical growth</span> through measurement and hypothesis testing</p>
+            <div class="small-offset-5 small-7 columns">
+                <a href="" id="workwithus-button" class="bold orange script">work with us -></a>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="fakehr">
+        <img src="img/bolt1.png" />
+        <img src="img/bolt2.png" />
+        <img src="img/bolt3.png" />
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="large-6 columns center">
+                <div class="portrait-container">
+                    <img src='img/ezl.jpg' />
+                </div>
+                <div class="bio">
+                    <h3>Eric Liu</h3>
+                    <p class="title">Founder</p>
+                </div>
+            </div>
+            <div class="large-6 columns center">
+                <div class="portrait-container">
+                    <img src='img/james.jpg' />
+                </div>
+                <div class="bio">
+                    <h3>James Dickerson</h3>
+                    <p class="title">Founder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row" style="display: none;">
+        <div class="large-8 columns">
+            <h3>The Grid</h3>
+            <!-- Grid Example -->
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="panel">
+                        <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="panel">
+                        <p>Six columns</p>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="panel">
+                        <p>Six columns</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4 columns">
+                    <div class="panel">
+                        <p>Four columns</p>
+                    </div>
+                </div>
+                <div class="large-4 columns">
+                    <div class="panel">
+                        <p>Four columns</p>
+                    </div>
+                </div>
+                <div class="large-4 columns">
+                    <div class="panel">
+                        <p>Four columns</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Buttons</h3>
+      <div class="row">
+        <div class="large-6 columns">
+          <p><a href="#" class="small button">Small Button</a></p>
+          <p><a href="#" class="button">Medium Button</a></p>
+          <p><a href="#" class="large button">Large Button</a></p>
+        </div>
+        <div class="large-6 columns">
+          <p><a href="#" class="small alert button">Small Alert Button</a></p>
+          <p><a href="#" class="success button">Medium Success Button</a></p>
+          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+        </div>
+      </div>
+        </div>
+        <div class="large-4 columns">
+            <h4>Getting Started</h4>
+            <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+            <h4>Other Resources</h4>
+            <p>Once you've exhausted the fun in this document, you should check out:</p>
+            <ul class="disc">
+                <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
+                <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
+                <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+            </ul>
+        </div>
+    </div>
+</div>
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/foundation.min.js"></script>
+  <!--
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.alerts.js"></script>
+  <script src="js/foundation/foundation.clearing.js"></script>
+  <script src="js/foundation/foundation.cookie.js"></script>
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  <script src="js/foundation/foundation.forms.js"></script>
+  <script src="js/foundation/foundation.joyride.js"></script>
+  <script src="js/foundation/foundation.magellan.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  <script src="js/foundation/foundation.reveal.js"></script>
+  <script src="js/foundation/foundation.section.js"></script>
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  -->
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
