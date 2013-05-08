@@ -17,9 +17,12 @@
     font-family: 'Alex Brush', cursive;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, span { color: #666; }
-xbody { background-color:#512323;}
-body { background-image: url(img/metal/etal2.jpg); }
+body, h1, h2, h3, h4, h5, h6, p, span { color: #a6a6a6; }
+body {
+    background-image: url(img/metal/metal5.jpg);
+    text-shadow: 2px 2px 0 rgba(1,1,1,0.9);
+}
+body { background-color:#512323;}
 
 a { display: inline-block; border-bottom: 1px dotted #aaa;}
 a:hover { color: #F6871F; }
@@ -29,7 +32,7 @@ a:hover { color: #F6871F; }
 .orange { color: #F6871F; }
 .logo-orange { color: #FFB300;}
 .growth {
-    color: #888;
+    color: #aaa;
 }
 .light-grey { color: #999;}
 
@@ -59,9 +62,13 @@ div.background {
     /*background-size: 1550px 1130px;
     */
     background: rgba(0,0,0,0.2);
-    background-image: url('img/metal/metal1.jpg');
-    opacity: 0.6;
+    background-image: url('img/metal/metal2.jpg');
+    background-image: url('img/metal/orange3.jpg');
+    opacity: 0.8;
 }
+
+#ah-what-the-fuck { background-color:white; height:186.9px;}
+/* background + 8px */
 
 @media screen and (max-width:480px) {
     h1.title {
@@ -70,24 +77,30 @@ div.background {
     div.background {
         height:144.9px;
     }
+    #ah-what-the-fuck { background-color:white; height:150.9px;}
 }
 @media screen and (max-width:320px) {
     h1.title {
         font-size: 3em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
     }
     div.background {
         height:110.9px;
     }
+    #ah-what-the-fuck { background-color:white; height:115.9px;}
 }
-#spacer { height: 230px; }
-@media screen and (max-width:1000px) {
-    #spacer { height: 350px; }
+
+#spacer { height: 80px; }
+
+@media screen and (max-width:900px) {
+    #spacer { height: 200px; }
 }
 @media screen and (max-width:480px) {
-    #spacer { height: 265px; }
+    #spacer { height: 115px; }
 }
 @media screen and (max-width:320px) {
-    #spacer { height: 170px; }
+    #spacer { height: 20px; }
 }
 
 #subtext p, #subtext p > span, #subtext a {
@@ -105,11 +118,22 @@ a#workwithus-button {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+@media screen and (min-width:768px) {
+    a#workwithus-button {
+      margin-left: 50%;
+    }
+}
+@media screen and (max-width:767px) {
+    a#workwithus-button {
+      width: 100%;
+      text-align: center;
+    }
+}
+
 a#workwithus-button:hover {
     background-color: #F6871F;
     color:white;
 }
-
 
 div.portrait-container{
     display: inline-block;
@@ -136,22 +160,44 @@ div.bio > p.title {
 }
 </style>
 <style>
+hr, hr:before, hr:after {
+    content: '';
+    text-align: center;
+    display: block;
+    height: 50px;
+    background-size: 50px 50px;
+}
+
+@media screen and (max-width:481px) {
+    hr, hr:before, hr:after {
+        height: 30px;
+        background-size: 30px 30px;
+    }
+}
+
 hr {
-    display: none;
-    background:url('img/bolt1.png') no-repeat top center;
-    height: 60px;
     border: 0;
+    background:url('img/bolt3.png') no-repeat top center;
   }
 hr:before {
-    content: url('img/bolt2.png');
+    width: 50%;
+    float: right;
+    background:url('img/bolt2.png') no-repeat top center;
 }
 hr:after {
-    content: url('img/bolt3.png');
+    width: 50%;
+    float: right;
+    background:url('img/bolt1.png') no-repeat top center;
 }
+
+
+
 div.fakehr {
+    display:none;
     text-align: center;
 }
 div.fakehr > img {
+    display: inline;
     margin: 0 40px;
     height: 30px;
 }
@@ -161,21 +207,22 @@ div.fakehr > img {
 <header>
     <div class="background"></div>
     <h1 class="title"><span class="white">li</span><span class="orange">g</span><span class="white">htbank</span> <span class="growth">growth</span></h1>
+    <div id="ah-what-the-fuck"></div>
 </header>
 
 <div id="spacer" note="i fucking hate this"></div>
+
 
 <div class="content">
     <div class="row" id="subtext">
         <div class="large-8 large-offset-2 columns">
             <p class="script light-grey">we grow <span class="bold">amazing</span> companies</p>
             <p><span class="orange">repeatable, methodical growth</span> through measurement and hypothesis testing</p>
-            <div class="small-offset-5 small-7 columns">
                 <a href="" id="workwithus-button" class="bold orange script">work with us -></a>
-            </div>
         </div>
     </div>
     <hr />
+    
     <div class="fakehr">
         <img src="img/bolt1.png" />
         <img src="img/bolt2.png" />
